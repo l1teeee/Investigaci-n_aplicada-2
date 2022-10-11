@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&family=Nunito:wght@900&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Almacenamiento de Datos</title>
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid" id="navio">
+            <div id="logi">
+                <a class="navbar-brand" href="#almacenamiento">Data Resources</a>
+            </div>
+            <div >
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+          
+            <div class="collapse navbar-collapse" id="opci">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#session">SessionStorage</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#local">LocalStorage</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#indexdb">IndexedDB</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<body>
+    <div class="pri">
+        <div class="titu">
+            <h1 >Almacenamiento de Información</h1>
+            <div class="subti">
+                <h2>Los navegadores actuales están en un punto, en el cual se pueden tener aplicaciones completamente 
+                independientes sin necesidad de una API, solo con cargar nuestro frontend y tener todos los datos de manera estática. 
+                Incluso podemos tener sitios web que sin estar conectados a internet funcionen.</h2>
+            </div>
+            <div class="botitu">
+                <a href="#defialmacenamiento"><button id="butone" type="button" class="btn btn-outline-dark">Almacenar información</button></a>
+                <a href="#defialmetodos"><button  id="butobla" type="button" class="btn btn-outline-secondary">Métodos de Almacenar</button></a>
+
+
+            </div>
+        </div>
+        <div class="image" id="almacenamiento">
+            <img src="resources/5193104.jpg" alt="">
+        </div>
+    </div>
+    <div class="alma" id="defialmetodos">
+        <div class="defi" >
+            <div class="case1">
+                <h1>Los navegadores guardan los datos de las páginas en que navegamos, y la manera en que guardan dicha información están divididas en 3 fundamentales métodos:</h1>
+            </div>
+            <div class="case2">
+                <div class="num">
+                    <h1>01</h1>
+                </div>
+                <div class="nom">
+                    <h1>SessionStorage</h1>
+                </div>
+                <div class="descrip">
+                    <h1>El sessionStorage es posiblemente el menos utilizado de los métodos para almacenar información en una aplicación web. </h1>
+                </div>
+            </div>
+            <div class="case3">
+                <div class="num">
+                    <h1>02</h1>
+                </div>
+                <div class="nom">
+                    <h1>Local Storage</h1>
+                </div>
+                <div class="descrip">
+                    <h1>El localStorage es muy similar al sessionStorage, con la única diferencia que este puede ser compartido entre varias ventanas del navegador y perdura en el tiempo. </h1>
+                </div>
+            </div>
+            <div class="case4">
+                <div class="num">
+                    <h1>03</h1>
+                </div>
+                <div class="nom">
+                    <h1>IndexedDB</h1>
+                </div>
+                <div class="descrip">
+                    <h1>El caso del indexedDB es completamente diferente a los métodos anteriores, dado que cómo su nombre lo indica, es una base de datos. </h1>
+                </div>
+            </div>
+        </div>
+        <!--<div class="almaimg">
+            <img src="resources/6460765.jpg" alt="">
+        </div>-->
+        
+            <!--<h1>Hay dos tipos de información digital: datos de entrada y salida. Los usuarios proporcionan los datos de entrada. 
+            <br><br>Los usuarios pueden ingresar los datos de entrada directamente en una computadora. Sin embargo, desde el principio de la era de las computadoras, descubrieron que ingresar datos continuamente de forma manual es prohibitivo en términos de tiempo y energía. Una solución a corto plazo es la memoria de la computadora, también conocida como memoria de acceso aleatorio (RAM). <br><br>Pero su capacidad de almacenamiento y retención de memoria son limitadas. La memoria de solo lectura (ROM) es, como su nombre indica, datos que solo se pueden leer pero no necesariamente editar. Controlan la funcionalidad básica de una computadora. </h1>-->
+    </div>
+    <div class="almace" id="defialmacenamiento">
+        <div class="princi">
+            <h1>Los usuarios indican a las computadoras que accedan a los datos y los almacenen en estos dispositivos de almacenamiento. <br><br>Sin embargo, a un nivel fundamental, hay dos bases para el almacenamiento de datos: la forma en que toman los datos y los datos de los dispositivos en los que se registran y almacenan.</h1>
+        </div>
+        <div class="pront">
+            <img src="resources/a1.png" alt="">
+        </div>
+    </div>
+    <div class="metod1"id="session">
+        <div class="sst" >
+            <h3>SessionStorage</h3>
+            <div class="defi1">
+                <h1>Es una propiedad que acceden al objeto Storage y tiene la función de almacenar datos de manera local, esta almacena información mientras la pestaña donde se esté utilizando siga abierta, la sesión de la página se mantiene por sobre las recargas. Una vez cerrada la pestaña, la información se elimina. </h1>
+            </div>
+            <div class="desve">
+                <h3 style="margin-top:2vw ;">Caracteristicas del SessionStorage:
+                </h3>
+
+                <ul>
+                    <li>El sessionStorage objeto almacena datos solo para una sesión: Esto quiere decir que los datos almacenados en el sessionStorage se eliminarán cuando se cierre el navegador.</li>
+                    <li>La sesión existe mientras el navegador esté abierto: la sesión existe mientras el navegador web esté abierto y sobreviva a la actualización de la página. </li>
+                    <li>SessionStorage separada: Esto sucede cuando se abren varias pestañas o ventanas con la misma URL, el navegador web crea un sessionStorage separada para cada pestaña o ventana. Por lo tanto, no se puede acceder a los datos almacenados en una pestaña del navegador web en otra pestaña.</li>
+                    <li>Cuando cierra una pestaña o ventana, el navegador web finaliza la sesión y borra los datos del archivo sessionStorage.</li>
+                    <li>Los datos almacenados en el sessionStorageson específicos del protocolo de la página: un mismo sitio javascripttutorial.nettiene diferentes sessionStorageal acceder con las teclas httpy https.</li>
+                </ul>
+            </div>
+            <h3 id="titumu" style="margin-top:2vw">Metodos</h3>
+            <div class="metis">
+                <div class="mets1">
+                    <h1>setItem():</h1>
+                    <div class="contex">
+                        <h2>Guarda la información valor a la que se podrá acceder invocando a clave. Por ejemplo clave puede ser "nombre" y valor puede ser "Josuu".</h2>
+                    </div>
+                    <h3>sessionStorage.setItem(‘nombre’, ‘Josuu’);</h3>
+                </div>
+                <div class="mets1" style="margin-top:2vw ;">
+                    <h1>getitem():</h1>
+                    <div class="contex">
+                        <h2>Recupera el value de la clave especificada. 
+                        </h2>
+                    </div>
+                    <h3>sessionStorage.getItem(‘nombre’);</h3>
+                    <div class="contex">
+                        <h2>Por ejemplo si clave es nombre puede recuperar “Josuu”.
+                        </h2>
+                    </div>
+                </div>
+                <div class="mets1" style="margin-top:2vw ;">
+                    <h1>length:</h1>
+                    <div class="contex">
+                        <h2>Devuelve el número de items guardados por el objeto sessionStorage actual
+                        </h2>
+                    </div>
+                    <h3>sessionStorage.length;</h3>
+                </div>
+                <div class="mets1" style="margin-top:2vw ;">
+                    <h1>key():</h1>
+                    <div class="contex">
+                        <h2>Cada item se almacena con un índice que comienza por cero y se incrementa unitariamente por cada item añadido. Con esta sintaxis rescatamos la clave correspondiente al item con índice i.</h2>
+                    </div>
+                    <h3>sessionStorage.key(i);</h3>
+                </div>
+                <div class="mets1" style="margin-top:2vw ;">
+                    <h1>removeItem():</h1>
+                    <div class="contex">
+                        <h2>Elimina un item almacenado en sessionStorage.
+                        </h2>
+                    </div>
+                    <h3>sessionStorage.removeItem();
+                    </h3>
+                </div>
+                <div class="mets1" style="margin-top:2vw ;">
+                    <h1>clear():</h1>
+                    <div class="contex">
+                        <h2>Elimina todos los items almacenados en sessionStorage, quedando vacío el espacio de almacenamiento.
+                        </h2>
+                    </div>
+                    <h3>sessionStorage.clear();
+                    </h3>
+                </div>
+            </div>
+            
+            <div class="d-grid gap-2" id="buti">
+                <a href="resources/Ejercicios/sessionStorage/index.html" target="_blank"><button class="btn btn-dark" type="button" style="width:92% ;"  >Ejemplo de SessionStorage</button>    </a>
+            </div>
+        </div>
+    </div>
+    <div class="metod" id="local">
+        <div class="sst" >
+            <h3>LocalStorage</h3>
+            <div class="defi1">
+                <h1>La propiedad LocalStorage que nos permite acceder al objeto localStorage, el cual permite a JavaScript, a los sitios web y aplicaciones web, a almacenar valores e índices, o información en el navegador web, la mayor diferencia con la SessionStorage, es que esta no tiene fecha de caducidad, a comparación de la SessionStorage, que se mantienen los datos mientras la sesión del navegador esté activa.<br><br>
+
+                    Al menos en el caso del navegador Google Chrome, la información se guarda en un archivo SQLite, en una subcarpeta del perfil del usuario, la carpeta está localizada en /AppData/Local/Google/Chrome/UserData/Default/Local Storage, para el navegador Firefox se guarda en un archivo SQLite llamado webappsstore.sqlite.
+                    
+                    <br><br>Tendremos acceso al LocalStorage por medio de la propiedad de WIndow.localStorage, este es parte de la interfaz de JS de Window, que representa una ventana que contiene un documento DOM. Es de considerar que esta solo es una propiedad de lectura que retorna la referencia al objeto del localstorage usado para almacenar los datos que solo son accesibles por el origen.
+                    </h1>
+            </div>
+            <h3 id="titumu" style="margin-top:2vw">Metodos</h3>
+            <div class="metis">
+                <div class="mets1">
+                    <h1>setItem():</h1>
+                    <div class="contex">
+                        <h2>Este método nos permite, guardar valores en el objeto de localStorage, para hacerlo necesitamos dos parámetros, el índice y el valor, de ejemplo tenemos lo siguiente:</h2>
+                    </div>
+                    <h3>window.localStorage.setItem(‘nombre’, ‘Kennet Vargas’);</h3>
+                    <div class="contex">
+                        <h2>Donde “nombre” es el indice y “Kennet Vargas” es el valor, notese que el localStorage solo es capaz de almacenar datos de tipo String, para poder almacenar arreglos u objetos, tendremos que convertirlos a strings.
+                        </h2>
+                    </div>
+                </div>
+                <div class="mets1" style="margin-top:2vw ;">
+                    <h1>getitem():</h1>
+                    <div class="contex">
+                        <h2>El siguiente método permite accede a la información almacenada en el objeto localStorage del navegador del usuario, este solamente acepta un parámetro y este es el índice, posterior retorna el valor de este índice como un dato de tipo string. Un ejemplo sencillo es:
+                        </h2>
+                    </div>
+                    <h3>window.localStorage.getItem(‘nombre’);</h3>
+                    <div class="contex">
+                        <h2>El valor a retornar sería de “Kennet Vargas”.
+                        </h2>
+                    </div>
+                </div>
+                <div class="mets1" style="margin-top:2vw ;">
+                    <h1>getitem():</h1>
+                    <div class="contex">
+                        <h2>El siguiente método permite accede a la información almacenada en el objeto localStorage del navegador del usuario, este solamente acepta un parámetro y este es el índice, posterior retorna el valor de este índice como un dato de tipo string. Un ejemplo sencillo es:
+                        </h2>
+                    </div>
+                    <h3>window.localStorage.getItem(‘nombre’);</h3>
+                    <div class="contex">
+                        <h2>El valor a retornar sería de “Kennet Vargas”.
+                        </h2>
+                    </div>
+                </div>
+                <div class="mets1" style="margin-top:2vw ;">
+                    <h1>removeItem():</h1>
+                    <div class="contex">
+                        <h2>Para eliminar datos almacenados en la sesión del localStorage, usa el método de removeItem(), cuando se pasa un índice, se eliminan todos los datos relacionados a este índice si este existe, de lo contrario no hará nada.La ejemplificación básica es:</h2>
+                    </div>
+                    <h3>window.localStorage.removeItem(‘nombre’);</h3>
+                </div>
+                <div class="mets1" style="margin-top:2vw ;">
+                    <h1>clear():</h1>
+                    <div class="contex">
+                        <h2>Para eliminar todos los datos y elementos que hay en el localStorage, se usa el método de clear(). este no recibe ningún parámetro.
+                        </h2>
+                    </div>
+                    <h3>window.localStorage.clear();
+                    </h3>
+                </div>
+                <div class="mets1" style="margin-top:2vw ;">
+                    <h1>key():</h1>
+                    <div class="contex">
+                        <h2>Este método resulta útil en momentos donde necesitamos recorrer  los índices y nos permite retornar un número o índice al localStorage para recuperar el nombre de la clave.
+                        </h2>
+                    </div>
+                    <h3>var Indice = window.localStorage.key(indice);
+                    </h3>
+                </div>
+            </div>
+            <div class="desve">
+                <h3 style="margin-top:2vw ;">Algunas desventajas que podemos encontrar del localStorage son:
+                </h3>
+
+                <ul>
+                    <li>No almacenar información privada o sensible del usuarios.</li>
+                    <li>No es un sustituto para una base de datos.</li>
+                    <li>Está limitado a 5MB de almacenamiento en la mayoría de los navegadores.</li>
+                    <li>No es seguro, ya que no tiene ninguna clase de seguridad para proteger los datos.                    </li>
+                    <li>Es sincrónico, significa que cada operación llamada, será ejecutada una después de la otra</li>
+                </ul>
+            </div>
+            <div class="d-grid gap-2">
+                <a href="resources/Ejercicios/localStorage/index.html" target="_blank"><button class="btn btn-light" type="button" style="width:92% ;"  >Ejemplo de LocalStorage</button>    </a>
+              </div>
+        </div>
+    </div>
+    <div class="metod2" id="indexdb">
+        <div class="sst" >
+            <h3>IndexedDB</h3>
+            <div class="defi1">
+                <h1>IndexedDB es una API de bajo nivel para el almacenamiento del lado del cliente de cantidades significativas de datos estructurados, incluidos archivos/blobs. <br><br>Esta API utiliza índices para permitir búsquedas de alto rendimiento de estos datos. En otras palabras, es una base de datos construida dentro del navegador, mucho más potente que localStorage. 
+                    Los datos son guardados bajo el directorio raíz del usuario junto con la configuración personal del navegador, extensiones, etc.
+                    </h1>
+            </div>
+            <div class="desve">
+                <h3 style="margin-top:2vw ;">Caracteristicas del SessionStorage:
+                </h3>
+
+                <ul>
+                    <li>Gran Capacidad de Almacenamiento.</li>
+                    <li>Restricción de Dominio.</li>
+                    <li>Soporta Transacciones</li>
+                    <li>Es Asíncrona</li>
+                    <li>Almacena pares clave/valor</li>
+                </ul>
+            </div>
+            <h3 id="titumu" style="margin-top:2vw">Sintaxis</h3>
+            <div class="metis">
+                <div class="mets1">
+                    <div class="contex">
+                        <h2>Técnicamente, los datos son almacenados bajo el directorio raíz del usuario junto con la configuración personal del navegador, extensiones, etc.</h2>
+                    </div>
+                    <center><img src="resources/index1.jpeg" alt=""></center>
+                    
+                    <div class="contex">
+                        <br><h2>Donde: 
+                            <br><br>    <b>name -></b> un string, el nombre de la base de datos.
+                            <br>    <b>version -></b>un entero positivo, predeterminado en 1.
+                            <br><br>La llamada devuelve un objeto openRequest, debemos escuchar en él los eventos:
+                            <div class="desve">
+                                <br>
+
+                                <ul>
+                                    <li><b>Success:</b> la base de datos está lista. Hay un “objeto database” en openRequest.result que habremos de usar en las llamadas subsiguientes.</li>
+                                    <li><b>Error:</b> Apertura fallida.</li>
+                                    <li><b>Upgradeneeded:</b> La base de datos está lista, pero su versión es obsoleta (ver abajo).</li>
+                                </ul>
+                            </div>
+                            <br>El evento upgradeneeded también se dispara cuando la base aún no existe (técnicamente, su versión es 0), lo cual nos permite llevar a cabo su inicialización.
+                            <br>Digamos que publicamos la primera versión de nuestra app.
+                        </h2>
+                    </div>
+                </div>
+                <div class="mets1" style="margin-top:2vw ;">
+                    <div class="contex">
+                        <h2>Entonces podemos abrir la base con versión 1 y hacer la inicialización en un manejador upgradeneeded:</h2>
+                        <br>
+
+                    </div>
+                    <center><img src="resources/index2.jpeg" alt=""></center>
+                    
+                    <div class="contex">
+                        <br>
+                        <h2>Luego, más tarde, publicamos la segunda versión.
+                            <br>
+                            <br>
+                            Podemos abrirla con versión 2 y ejecutar la actualización así:
+                            <br>
+
+                        </h2>
+                    </div>
+                    <center><img src="resources/index3.jpeg" alt=""></center>
+
+                </div>
+                <div class="mets1" style="margin-top:2vw ;">
+                    <div class="contex">
+                        <h2>Entonces, y solamente si el manejador de <b>onupgradeneeded </b> finaliza sin errores, se dispara el evento <b>openRequest.onsuccess</b> y se considera que la base de datos fue abierta con éxito.
+                            <br><br>Para borrar una base de datos:
+                            
+                        </h2>
+                    </div>
+                    <center><img src="resources/index4.jpeg" alt=""></center>
+                    
+
+                </div>
+            </div>
+            
+            <div class="d-grid gap-2" id="buti">
+                <a href="resources/Ejercicios/IndexedDB/index.html" target="_blank"><button class="btn btn-warning" type="button" style="width:92% ;"  >Ejemplo de indexedDB</button>    </a>
+              </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,539 @@
+html{
+    scroll-behavior: smooth;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#logi{
+    margin-left: 7vw;
+}
+
+#opci{
+    margin-left: 22%;
+}
+
+#navio{
+    display: flex;
+    flex-direction: row;
+}
+
+.pri{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.pri .titu{
+    width: 40%;
+    margin-left: 8vw;
+    margin-top: 12%;
+}
+
+.pri .titu h1{
+    font-size: 60px;
+    font-family:   'Nunito', sans-serif;
+    color: #28162d;
+    
+}
+
+
+.pri .titu .subti h2{
+    font-size: 22px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: justify;
+    color: #28162d;
+}
+
+
+.botitu{
+    margin-top: 2vw;
+}
+
+#butone{
+    padding: 1vw 3vw 1vw 3vw;
+    border-radius: 12px;
+}
+
+#butobla{
+    padding: 1vw 3vw 1vw 3vw;
+    border-radius: 12px;
+    margin-left: 1vw;
+}
+
+/*IMAGEN*/
+
+.pri .image{
+    width: 50%;
+}
+
+.pri .image img{
+    width: 95%;
+    height: 100%;
+    padding-bottom: 1vw;
+
+}
+
+/*IMAGEN*/
+
+
+/*ALMACENAMIENTO*/
+
+.alma{
+    display: flex;
+    flex-direction: row;
+    background-color: #f4c258;
+}
+
+
+.defi{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: justify;
+    color: #28162d;
+    margin: 4vw 0vw 3vw 8vw;
+    width: 100%;
+}
+
+.defi .case1{
+    width: 20%;
+}
+
+.defi .case1 h1{
+    font-size: 25px;
+    font-weight:bold;
+}
+
+/*-------------------------*/
+
+.defi .case2{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-left: 3vw;
+}
+
+.defi .case2 .num h1{
+    font-size: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.defi .case2 .nom h1{
+    font-size: 30px;
+    font-family:   'Nunito', sans-serif;
+
+}
+
+.defi .case2 .descrip h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+}
+
+/*-------------------------*/
+
+.defi .case3{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-left: 3vw;
+}
+
+.defi .case3 .num h1{
+    font-size: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.defi .case3 .nom h1{
+    font-size: 30px;
+    font-family:   'Nunito', sans-serif;
+
+}
+
+.defi .case3 .descrip h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+}
+
+/*-------------------------*/
+
+
+.defi .case4{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-left: 3vw;
+}
+
+.defi .case4 .num h1{
+    font-size: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.defi .case4 .nom h1{
+    font-size: 30px;
+    font-family:   'Nunito', sans-serif;
+
+}
+
+.defi .case4 .descrip h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+}
+
+
+/*ALMACENAMIENTO*/
+
+
+
+/*QUEESALMA*/
+
+.almace{
+    display: flex;
+    flex-direction: row;
+}
+
+.almace .princi{
+    width: 50%;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 11%;
+}
+
+.almace .princi h1{
+    margin-left: 8vw;
+    font-size: 30px;
+}
+
+
+.almace .pront img{
+    width: 85%;
+    height: 100%;
+    margin: 3vw 1vw 3vw 3vw;
+}
+
+/*QUEESALMA*/
+
+
+
+
+/*SESSIONSTORAGE*/
+
+
+
+.metod1{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vw;
+    background-color: #e0f7ff;
+    color: #283e46;
+}
+
+.metod1 .sst{
+    margin: 4vw 2vw 2vw 8vw;
+    
+}
+
+
+
+.metod1 .sst h3{
+    font-family:   'Nunito', sans-serif;
+}
+
+
+
+.metod1 .sst .defi1{
+    width: 92%;
+}
+
+
+
+.metod1 .sst .defi1 h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+    text-align: justify;
+
+}
+
+#titumu{
+    margin-left: 41%;
+}
+
+.metod1 .sst .metis{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 2vw;
+    
+}
+
+.metod1 .sst .metis .mets1{
+    padding: 2vw;
+    width: 92%;
+    color: #f6f6f6;
+    background:  #283e46;
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+
+}
+
+.metod1 .sst .metis .mets1 h1{
+    font-family:   'Nunito', sans-serif;
+    font-size: 35px;
+    text-align: center;
+}
+
+.metod1 .sst .metis .mets1 .contex{
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: justify;
+}
+
+.metod1 .sst .metis .mets1 .contex h2{
+    font-size: 25px;
+}
+
+.metod1 .sst .metis .mets1 h3{
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight:bold;
+
+}
+
+
+#buti{
+    margin-top: 2vw;
+}
+
+.desve{
+    width: 92%;
+}
+
+
+/*SESSIONSTORAGE*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*LOCALSTORAGE*/
+
+
+.metod{
+    display: flex;
+    flex-direction: column;
+    background-color: #283e46;
+    color: rgb(255, 244, 244);
+}
+
+.metod .sst{
+    margin: 4vw 2vw 2vw 8vw;
+    
+}
+
+
+
+.metod .sst h3{
+    font-family:   'Nunito', sans-serif;
+}
+
+
+
+.metod .sst .defi1{
+    width: 92%;
+}
+
+
+
+.metod .sst .defi1 h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+    text-align: justify;
+
+}
+
+#titumu{
+    margin-left: 41%;
+}
+
+.metod .sst .metis{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 2vw;
+    
+}
+
+.metod .sst .metis .mets1{
+    padding: 2vw;
+    width: 92%;
+    color: #283e46;
+    background:  rgb(255, 244, 244);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+
+}
+
+.metod .sst .metis .mets1 h1{
+    font-family:   'Nunito', sans-serif;
+    font-size: 35px;
+    text-align: center;
+}
+
+.metod .sst .metis .mets1 .contex{
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: justify;
+}
+
+.metod .sst .metis .mets1 .contex h2{
+    font-size: 25px;
+}
+
+.metod .sst .metis .mets1 h3{
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight:bold;
+
+}
+
+
+/*LOCALSTORAGE*/
+
+
+
+
+/*INDEXDB*/
+
+
+.metod2{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    color: #091113;
+}
+
+.metod2 .sst{
+    margin: 4vw 2vw 2vw 8vw;
+    
+}
+
+
+
+.metod2 .sst h3{
+    font-family:   'Nunito', sans-serif;
+}
+
+
+
+.metod2 .sst .defi1{
+    width: 92%;
+}
+
+
+
+.metod2 .sst .defi1 h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+    text-align: justify;
+
+}
+
+#titumu{
+    margin-left: 41%;
+}
+
+.metod2 .sst .metis{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 2vw;
+    
+}
+
+.metod2 .sst .metis .mets1{
+    padding: 2vw;
+    width: 92%;
+    color: #171515;
+    background:  #ffc801;
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+
+}
+
+.metod2 .sst .metis .mets1 h1{
+    font-family:   'Nunito', sans-serif;
+    font-size: 35px;
+    text-align: center;
+}
+
+.metod2 .sst .metis .mets1 .contex{
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: justify;
+}
+
+.metod2 .sst .metis .mets1 img{
+    border-radius: 8px;
+}
+
+
+.metod2 .sst .metis .mets1 .contex h2{
+    font-size: 25px;
+}
+
+.metod2 .sst .metis .mets1 h3{
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight:bold;
+
+}
+
+
+#buti{
+    margin-top: 2vw;
+}
+
+.desve{
+    width: 92%;
+}
+
+
+
+
+
+
+
+/*INDEXDB*/

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>LocalStorage</title>
+    <script src="js/script.js"></script>
+</head>
+<body onload="mostrar();">
+    
+        <div class="contenedor">
+            <div class="hijo">
+                <h1>Funcionalidad básica del LocalStorage</h1>
+                <form>
+                    <div class="mb-3">
+                    <label class="form-label" for="">Tu nombre</label>
+                    <input type="text" id="nombre" class="form-control">
+                    </div>
+                    <br>
+                    <p id="texto"></p>
+                    <p id="conta"></p>
+                    <br>
+                    <input type="button" value="Guardar" class="btn btn-primary" onclick="guardar();">
+                    <input type="button" value="Eliminar" class="btn btn-danger" onclick="eliminar();">
+                </form> 
+                <a href="../../../index.html"><button type="button" class="btn btn-success" style="margin-top: 1vw;">Regresar al index</button></a>
+
+            </div>
+        </div>
+
+   
+</body>
+</html>

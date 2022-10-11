@@ -1,0 +1,22 @@
+color{
+    background-color: #002E94;
+    background-color: #083AA9;
+    background-color: #E1CEB5;
+    background-color: #FFE7CC;
+}
+
+body{
+    background-color: #3F0071;
+}
+
+div.contenedor{
+    margin: 12vw 30% 12vw 28%;
+    width: 40%;
+    height: auto;
+    background-color: #FFECEF;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
